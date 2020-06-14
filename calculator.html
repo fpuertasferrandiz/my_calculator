@@ -3,7 +3,9 @@
 <script type="text/javascript">
 function cube() {
  var num = document.getElementById("n1");
- num.value = Math.pow(num.value, 3);
+ if (validate()) {
+	num.value = Math.pow(num.value, 3);
+ }
 }
 function sin() {
  var num = document.getElementById("n1");
@@ -13,6 +15,7 @@ function cuadratic() {
  var num = document.getElementById("n1");
  num.value = Math.pow(num.value, 4);
 }
+<<<<<<< HEAD
 function square() {
  var num = document.getElementById("n1");
  num.value = Math.pow(num.value, 2);
@@ -20,6 +23,12 @@ function square() {
 function inverse() {
  var num = document.getElementById("n1");
  num.value = 1/num.value;
+=======
+function validate() {
+	return true;
+}
+function anonymous() {
+>>>>>>> 24aacec0e802df45b62a4fe229f7dc1cd2faa85c
 }
 </script>
 </head>
